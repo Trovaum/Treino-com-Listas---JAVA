@@ -25,6 +25,12 @@ public class App {
         System.out.println(users.get(10).getFirstName());
         System.out.println(users.get(10).getLastName());
 
+        // ------------------------Method toString------------------------
+        System.out.println("------------------------toString method----------------------");
+        User userA = new User("Ricardo", "Pouza");
+
+        System.out.println(userA.toString());
+
 
     }
 }
