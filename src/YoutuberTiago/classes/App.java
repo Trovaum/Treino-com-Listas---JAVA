@@ -10,7 +10,7 @@ public class App {
 
         // cria a se 10 registros
         int i = 0;
-        while (i < 10){
+        while (i < 10) {
             User actual = new User("Nome" + i, "Sobrenome" + i);
             users.add(actual);
             i++;
@@ -30,6 +30,15 @@ public class App {
         User userA = new User("Ricardo", "Pouza");
 
         System.out.println(userA.toString());
+
+        //-------------------------Hashcode and Equals--------------------------------------------
+        System.out.println("-------------------hashCode and Equals-------------------------");
+        User userC = new User("Enzo", "Pouza");
+        User userD = new User("Enzo", "Pouza");
+
+        System.out.println(userC.equals(userD));
+        System.out.println(userC.hashCode());
+        System.out.println(userD.hashCode());
 
 
     }
